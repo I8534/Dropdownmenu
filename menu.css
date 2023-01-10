@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.gnb {
+  display: flex;
+}
+
+.gnb > li {
+  /* 이건 자식인 li만 한다는 것을 의미 */
+  width: 25%;
+  text-align: center;
+}
+
+.gnb > li > a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  background-color: dodgerblue;
+  color: white;
+  font-weight: 700;
+}
+
+.gnb > li > a:hover, .gnb > li > a.on {
+  background-color: red;
+}
+
+.sub {
+  background-color: #eeeded;
+  display: none;
+}
+
+.sub li {
+  height: 40px;
+  line-height: 40px;
+}
+
+.sub li:hover {
+  background-color: gray;
+}
+
+/* .sub li {
+  height: 40px;
+  line-height: 40px;
+  이건 자식뿐만 아니라 손자까지도 포함인지?
+
+} */
